@@ -27,12 +27,12 @@ final class RegisterUser extends Command
 
     protected function setPayload(array $payload): void
     {
-        // TODO: Implement setPayload() method.
+        $this->payload = $payload;
     }
 
     public function payload(): array
     {
-        // TODO: Implement payload() method.
+        return $this->payload;
     }
 
 }

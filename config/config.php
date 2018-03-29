@@ -50,5 +50,6 @@ namespace {
     $eventRouter->route(UserRegistered::class)->to([$userProjector, 'onUserRegistered']);
     $eventRouter->attachToMessageBus($eventBus);
 
-    $userId = '20';
+//    $userId = (Ramsey\Uuid\Uuid::uuid4())->toString();
+    $userId = "20";
 }
