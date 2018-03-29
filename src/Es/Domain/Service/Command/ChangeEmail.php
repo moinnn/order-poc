@@ -19,15 +19,4 @@ final class ChangeEmail extends Command
     {
         return $this->payload()['email'];
     }
-
-    protected function setPayload(array $payload): void
-    {
-        $this->payload = $payload;
-    }
-
-    public function payload(): array
-    {
-        return $this->payload;
-    }
-
 }

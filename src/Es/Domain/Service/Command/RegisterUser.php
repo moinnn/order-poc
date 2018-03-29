@@ -25,14 +25,4 @@ final class RegisterUser extends Command
         return $this->payload()['password'];
     }
 
-    protected function setPayload(array $payload): void
-    {
-        $this->payload = $payload;
-    }
-
-    public function payload(): array
-    {
-        return $this->payload;
-    }
-
 }

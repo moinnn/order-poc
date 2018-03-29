@@ -8,13 +8,13 @@ use App\Domain\Event\UserRegistered;
 use Prooph\EventSourcing\AggregateChanged;
 use Prooph\EventSourcing\AggregateRoot;
 
-final class User extends AggregateRoot
+class User extends AggregateRoot
 {
     private $id;
     private $email;
     private $password;
 
-    protected function aggregateId(): string
+    public function aggregateId(): string
     {
         return $this->id;
     }
@@ -53,6 +53,7 @@ final class User extends AggregateRoot
             'email' => $email,
             'password' => $password
         ]));
+
         return $obj;
     }
 }
