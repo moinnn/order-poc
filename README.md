@@ -1,0 +1,1 @@
+This is a proof of concept project regarding the use of Event Sourcing libraries.
