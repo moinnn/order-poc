@@ -6,7 +6,7 @@ namespace App\Domain\Service\Command;
 use Prooph\Common\Messaging\Command;
 use Prooph\Common\Messaging\PayloadTrait;
 
-class ChangeEmail extends Command
+final class ChangeEmail extends Command
 {
     use PayloadTrait;
 

@@ -8,7 +8,7 @@ use App\Domain\Event\UserRegistered;
 use Prooph\EventSourcing\AggregateChanged;
 use Prooph\EventSourcing\AggregateRoot;
 
-class User extends AggregateRoot
+final class User extends AggregateRoot
 {
     private $id;
     private $email;

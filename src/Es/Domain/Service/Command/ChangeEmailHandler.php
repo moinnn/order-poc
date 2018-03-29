@@ -5,7 +5,7 @@ namespace App\Domain\Service\Command;
 
 use App\Domain\Repository\UserRepository;
 
-class ChangeEmailHandler
+final class ChangeEmailHandler
 {
     private $repository;
 

@@ -6,7 +6,7 @@ namespace App\Domain\Service\Command;
 use App\Domain\Entity\User;
 use App\Domain\Repository\UserRepository;
 
-class RegisterUserHandler
+final class RegisterUserHandler
 {
     private $repository;
 

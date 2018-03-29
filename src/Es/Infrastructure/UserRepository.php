@@ -11,7 +11,7 @@ use Prooph\EventStore\EventStore;
 use Prooph\SnapshotStore\SnapshotStore;
 use App\Domain\Repository\UserRepository as BaseRepo;
 
-class UserRepository extends AggregateRepository implements BaseRepo
+final class UserRepository extends AggregateRepository implements BaseRepo
 {
     public function __construct(EventStore $eventStore, SnapshotStore $snapshotStore)
     {

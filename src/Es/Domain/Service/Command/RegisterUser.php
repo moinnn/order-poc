@@ -6,7 +6,7 @@ namespace App\Domain\Service\Command;
 use Prooph\Common\Messaging\Command;
 use Prooph\Common\Messaging\PayloadTrait;
 
-class RegisterUser extends Command
+final class RegisterUser extends Command
 {
     use PayloadTrait;
 
